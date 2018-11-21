@@ -1,0 +1,11 @@
+**/*.log
+**/._*
+**/.DS_Store
+**/.gitattributes
+**/.github
+**/Thumbs.db
+**/build-results
+**/build
+.dockerignore
+Dockerfile
+docker-compose.yaml
