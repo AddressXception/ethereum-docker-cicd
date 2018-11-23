@@ -1,10 +1,18 @@
-# ethereum-devops
+# ethereum-docker-cicd
 
-Ethereum CI/CD Workflows
+Ethereum CI/CD Workflows in docker
+
+## Overview
+
+The Ethereum docker CI/CD Project is a truffle project template that executes commands inside of docker.  This project is a starting point for supporting `truffle test` execution on a CI server
+
+## Notable Files
+
+* `entrypoint.sh` - the main entry point for the truffle container.
 
 ## Development Environment
 
-To build locally you need all the things.  Instructions for Setting up a blockchain dev environment
+To build locally you need all the things.  Here are some tools for setting up a blockchain dev environment
 
 1. if you are on windows, install the [Windows Subsystem for linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 	1. if on a mac, install homebrew

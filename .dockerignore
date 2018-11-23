@@ -6,6 +6,11 @@
 **/Thumbs.db
 **/build-results
 **/build
+**/.vscode
 .dockerignore
+.gitignore
+box-img-lg.png
+box-img-sm.png
 Dockerfile
 docker-compose.yaml
+truffle-box.json
