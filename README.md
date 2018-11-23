@@ -6,6 +6,19 @@ Ethereum CI/CD Workflows in docker
 
 The Ethereum docker CI/CD Project is a truffle project template that executes commands inside of docker.  This project is a starting point for supporting `truffle test` execution on a CI server
 
+## Using this Repo
+
+`truffle unbox AddressXception/ethereum-docker-cicd`
+
+## Build in docker
+
+Execute one of the `docker-run-tests` scripts
+
+1. execute `pwsh ./scripts/docker-run-tests.ps1`
+2. alternatively, execute `./scripts/docker-run-tests.sh`
+
+Docker will write out results to `build-results`
+
 ## Notable Files
 
 * `entrypoint.sh` - the main entry point for the truffle container.
@@ -35,12 +48,3 @@ To build locally you need a complete dev environment set up.
 2. execute `npm install`
 3. execute `truffle compile`
 4. execute `truffle test`
-
-## Build in docker
-
-Execute one of the `docker-run-tests` scripts
-
-1. execute `pwsh ./scripts/docker-run-tests.ps1`
-2. alternatively, execute `./scripts/docker-run-tests.sh`
-
-Docker will write out results to `build-results`
