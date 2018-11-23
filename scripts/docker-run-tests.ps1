@@ -19,4 +19,4 @@ Write-Host "Building Containers" -ForegroundColor Cyan
 & $dockerCompose -f docker-compose.yml build --no-cache
 
 Write-Host "Deploying Containers" -ForegroundColor Cyan
-& $dockerCompose -f docker-compose.yml up
+& $dockerCompose -f docker-compose.yml up --abort-on-container-exit

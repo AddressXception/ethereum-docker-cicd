@@ -1,5 +1,9 @@
 pragma solidity ^0.4.24;
 
+/**
+* @title Initializable
+* @dev contract can be initialized by calling a specific function.
+*/
 contract Initializable {
     /**
     * @dev Indicates if the contract has been initialized.
@@ -15,9 +19,11 @@ contract Initializable {
         initialized = true;
     }
 
+    /**
+    * @dev Modifier to execute only if contract is initialized
+    */
     modifier isInitialized() {
         require(initialized, "contract instance must be initialized");
         _;
     }
-
 }

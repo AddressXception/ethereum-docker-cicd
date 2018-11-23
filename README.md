@@ -1,6 +1,6 @@
 # ethereum-devops
 
-A testbed for Ethereum CI/CD Workflows
+Ethereum CI/CD Workflows
 
 ## Development Environment
 
@@ -13,12 +13,11 @@ To build locally you need all the things.  Instructions for Setting up a blockch
 4. [Node Package Manager](https://www.npmjs.com/get-npm)
     1. i use [Node Version Manager](https://github.com/creationix/nvm)
 5. [Powershell 6.0.1](https://github.com/powershell/powershell#get-powershell)
-6. [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-7. [VSCode-solidty](https://github.com/juanfranblanco/vscode-solidity)
-8. [Material Icon Theme](https://davidburela.wordpress.com/2016/11/18/configuring-visual-studio-code-for-ethereum-blockchain-development/)
-9. [Truffle framework](https://truffleframework.com/truffle)
-10. [Ganache](https://truffleframework.com/ganache)
-11. optionally, install [Docker](https://docs.docker.com/install/)
+6. [VSCode-solidty](https://github.com/juanfranblanco/vscode-solidity)
+7. [Material Icon Theme](https://davidburela.wordpress.com/2016/11/18/configuring-visual-studio-code-for-ethereum-blockchain-development/)
+8. [Truffle framework](https://truffleframework.com/truffle)
+9. [Ganache](https://truffleframework.com/ganache)
+10. optionally, install [Docker](https://docs.docker.com/install/)
 
 ## Build Locally
 
@@ -31,8 +30,9 @@ To build locally you need a complete dev environment set up.
 
 ## Build in docker
 
-To build in docker, you only need powershell and docker installed.
+Execute one of the `docker-run-tests` scripts
 
-1. execute `pwsh ./scripts/docker-compose-test.ps1`
+1. execute `pwsh ./scripts/docker-run-tests.ps1`
+2. alternatively, execute `./scripts/docker-run-tests.sh`
 
 Docker will write out results to `build-results`
